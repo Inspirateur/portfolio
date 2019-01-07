@@ -1,0 +1,47 @@
+body {
+    background-color: #121215;
+    color: #D2D2D0;
+    font-family: monospace;
+    font-size: 1.5em;
+}
+
+h2 {
+    text-align: center;
+    color: #EEE;
+}
+
+h3 {
+    margin-top: 2em;
+    margin-bottom: 5px;
+    color: #EEE;
+}
+
+h4 {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.proj {
+    background-color: #1F1F24;
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-left: 1.5em;
+}
+
+.proj:hover {
+    cursor: pointer;
+    background-color: #2D2D32;
+}
+
+.proj h4 {
+    color: #A0E5B0;
+}
+
+.proj span {
+    margin-right: 10px;
+}
+
+.proj span:last-child {
+    color: #A0A0E5;
+}
