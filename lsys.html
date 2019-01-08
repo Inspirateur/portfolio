@@ -7,6 +7,32 @@
 </head>
 
 <body>
-    <h2>L-System Web Page</h2>
+    <h2>L-System Web Page (Dec 2018)</h2>
+	<div style="margin-bottom: 1.5em">
+		A l'origine, un <span style="color: #A0E5B0">Système de Lindenmayer</span> (1968) est une grammaire utilisée pour décrire le développement de plantes ou de bactéries. <br>
+		Ces grammaires sont constituées d'un <span style="color: #A0A0E5">Axiome (S)</span>, d'éléments qui effectuent une <span style="color: #A0A0E5">action</span> (comme <span style="color: #E5E5A0">f</span> pour tracer un trait, <span style="color: #E5E5A0">+</span> ou <span style="color: #E5E5A0">-</span> pour tourner) <br>
+		et de règles qu'on définit comme: <span style="color: #A0A0E5">Règle</span> → <span style="color: #A0A0E5">une suite de règles et d'actions</span> (l'Axiome S est une règle aussi)<br>
+	</div>
+	<div style="margin-bottom: 1.5em">
+		<img src="lsys.png" width="409" height="309" style="display: inline-block"/>
+		<div style="display: inline-block; vertical-align: top; margin-left: 1em;">
+			<h3 style="margin-top: 0px">Dragon Curve</h3>
+			S → <span style="color: #E5E5A0">f</span><span style="color: #A0A0E5">X</span> <br>
+			<span style="color: #A0A0E5">X</span> → <span style="color: #A0A0E5">X</span><span style="color: #E5E5A0">+</span><span style="color: #E5A0E0">Y</span><span style="color: #E5E5A0">f+</span> <br>
+			<span style="color: #E5A0E0">Y</span> → <span style="color: #E5E5A0">-f</span><span style="color: #A0A0E5">X</span><span style="color: #E5E5A0">-</span><span style="color: #E5A0E0">Y</span> <br>
+			angle: 90° <br>
+			ordre: 12<br>
+			<br> <br>
+			<div style="font-size: 0.8em">
+				On lit les règles de gauche à droite en commençant par S, <br>
+				l'ordre représente le nombre de fois ou on est autorisé à lire une règle. <br>
+				Plus l'ordre est petit, plus la figure sera simple.
+			</div>
+		</div>
+	</div>
+	<div>
 
+		Comme le montre l'exemple ci-dessus, un ensemble de règles simples peu donner un résultat complexe et harmonieux. <br>
+		J'ai donc réalisé une page sur mon temps libre permettant d'écrire ses propres Systèmes L <br>
+		et d'en visualiser le résultat en temps réel, centré et colorié. Disponible ici: <a href="../L-System">L-System</a>
 </body>
