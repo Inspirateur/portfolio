@@ -21,12 +21,23 @@ h4 {
     margin-bottom: 2px;
 }
 
+#projects {
+    margin-bottom: 2em;
+}
+
 .proj {
+    color: #EEE;
+    text-decoration: none;
     background-color: #1F1F24;
     padding: 5px;
     border-radius: 5px;
     display: inline-block;
     margin-left: 1.5em;
+}
+
+.proj div {
+    display: flex;
+    justify-content: space-between;
 }
 
 .proj:hover {
@@ -38,10 +49,6 @@ h4 {
     color: #A0E5B0;
 }
 
-.proj span {
-    margin-right: 10px;
-}
-
-.proj span:last-child {
+.proj div span:last-child {
     color: #A0A0E5;
 }

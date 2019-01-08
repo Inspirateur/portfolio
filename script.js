@@ -2,8 +2,9 @@ function load_project(cat, proj, info) {
     // Get the main div
     let maindiv = document.getElementById(cat);
     // Create the project div
-    let projectdiv = document.createElement("div");
+    let projectdiv = document.createElement("a");
     projectdiv.className = "proj";
+    projectdiv.setAttribute("href", `./${proj}.html`)
     // Add an image
     let projectimg = document.createElement("img");
     projectimg.setAttribute("src", `${proj}.png`);
@@ -14,15 +15,19 @@ function load_project(cat, proj, info) {
     let projecttitle = document.createElement("h4");
     projecttitle.innerHTML = info.title;
     projectdiv.appendChild(projecttitle);
+    // Info container (for left and right alignment)
+    let infocontainer = document.createElement("div");
     // Add a date
     let projectdate = document.createElement("span");
     projectdate.innerHTML = info.date;
-    projectdiv.appendChild(projectdate);
+    infocontainer.appendChild(projectdate);
     // Add languages
     let projectlang = document.createElement("span");
     projectlang.innerHTML = info.lang;
-    projectdiv.appendChild(projectlang);
+    infocontainer.appendChild(projectlang);
 
+    // Add the container to the main div
+    projectdiv.appendChild(infocontainer);
     // Add the project div to the main div
     maindiv.appendChild(projectdiv);
 }
@@ -34,41 +39,6 @@ function load_folder(cat, folder) {
 }
 
 function main() {
-    projects = {
-        "web": {
-            "wib": {
-                "title": "Wikipedia Integrated Browser",
-                "date": 2017,
-                "lang": "HTML/CSS/JS/PHP/SQL"
-            },
-            "lsys": {
-                "title": "L-System",
-                "date": 2018,
-                "lang": "HTML/CSS/JS"
-            }
-        },
-        "soft": {
-        },
-        "game": {
-            "juliette": {
-                "title": "Juliette sors de sa chambre",
-                "date": 2018,
-                "lang": "Unity C#"
-            },
-            "neonjam": {
-                "title": "NeonJam",
-                "date": 2018,
-                "lang": "Unity C#"
-            }
-        },
-        "ml": {
-            "reltrad": {
-                "title": "Classification de traduction",
-                "date": 2018,
-                "lang": "Python 3 (tensorflow)"
-            }
-        }
-    };
     for(let cat in projects) {
         load_folder(cat, projects[cat]);
     }
