@@ -11,8 +11,6 @@ projects = {
             "lang": "HTML/CSS/JS"
         }
     },
-    "soft": {
-    },
     "game": {
         "juliette": {
             "title": "Juliette sors de sa chambre",
@@ -21,6 +19,11 @@ projects = {
         },
         "neonjam": {
             "title": "NeonJam",
+            "date": 2018,
+            "lang": "Unity C#"
+        },
+        "neonstorm": {
+            "title": "NeonStorm",
             "date": 2018,
             "lang": "Unity C#"
         }
